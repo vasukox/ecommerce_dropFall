@@ -24,10 +24,17 @@ export default function Home() {
         </Section>
 
         <Section id="catalog" title="Catálogo">
-          {/* Banner principal del catálogo con enlace */}
-          <div className="w-full flex justify-center mb-6">
-            <a href="/catalogo" className="block w-full max-w-4xl rounded-3xl bg-gradient-to-r from-purple-900 via-pink-700 to-red-700 p-10 text-center text-white text-3xl font-extrabold shadow-lg hover:scale-105 transition-transform duration-300">
-              Ver todo el catálogo
+          {/* Banner principal del catálogo con enlace mejorado */}
+          <div className="w-full flex flex-col items-center mb-10">
+            <h2 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 bg-clip-text text-transparent drop-shadow-lg mb-8 animate-fade-in">
+              <span className="inline-block px-4 py-2 rounded-xl shadow-xl backdrop-blur-sm">Catálogo</span>
+            </h2>
+            <a href="/catalogo" className="relative group block w-full max-w-2xl rounded-2xl bg-gradient-to-r from-purple-700 via-pink-600 to-red-600 p-8 text-center text-white text-2xl font-bold shadow-2xl overflow-hidden transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-pink-400">
+              <span className="flex items-center justify-center gap-3">
+                <svg className="w-7 h-7 text-white group-hover:animate-bounce" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 12h18m-6-6 6 6-6 6"/></svg>
+                Ver todo el catálogo
+              </span>
+              <span className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500 bg-gradient-to-r from-white/30 via-pink-200/20 to-transparent pointer-events-none blur-lg"></span>
             </a>
           </div>
         </Section>
